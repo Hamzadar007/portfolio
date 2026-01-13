@@ -1,5 +1,5 @@
 import { Github, Linkedin, Twitter, Mail } from "lucide-react";
-import HeroIllustration from "./HeroIllustration";
+import heroIllustration from "@/assets/hero-illustration.png";
 
 const Hero = () => {
   const socialLinks = [
@@ -50,7 +50,14 @@ const Hero = () => {
 
           {/* Illustration */}
           <div className="order-1 lg:order-2 animate-fade-up-delayed">
-            <HeroIllustration />
+            <div className="relative">
+              <div className="absolute inset-0 bg-accent/10 rounded-full blur-3xl scale-75" />
+              <img 
+                src={heroIllustration} 
+                alt="Developer working on mobile apps" 
+                className="relative w-full max-w-lg mx-auto animate-float"
+              />
+            </div>
           </div>
         </div>
 
