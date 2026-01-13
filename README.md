@@ -1,73 +1,128 @@
-# Welcome to your Lovable project
+# Portfolio - React Native Developer
 
-## Project info
+A modern, responsive portfolio website showcasing my work as a React Native developer. This portfolio features a clean design with sections for projects, skills, experience, and contact information.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## About
 
-## How can I edit this code?
+This portfolio website is built to showcase my expertise in React Native development and mobile app development. It highlights my projects, technical skills, professional experience, and provides a way for potential clients and employers to get in touch.
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+This project is built with modern web technologies:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Vite** - Fast build tool and development server
+- **React** - UI library for building interactive interfaces
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn-ui** - High-quality React components
+- **React Router** - Client-side routing
+- **React Query** - Data fetching and state management
 
-Changes made via Lovable will be committed automatically to this repo.
+## Prerequisites
 
-**Use your preferred IDE**
+Before running this project, make sure you have the following installed:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Node.js** (v16 or higher) - [Download Node.js](https://nodejs.org/)
+- **npm** (comes with Node.js) or **yarn** or **bun**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Getting Started
 
-Follow these steps:
+Follow these steps to run the project locally:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 1. Clone the Repository
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+git clone git@github.com:Hamzadar007/portfolio.git
+cd portfolio
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 2. Install Dependencies
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
+```
+
+Or if you're using yarn:
+
+```bash
+yarn install
+```
+
+Or if you're using bun:
+
+```bash
+bun install
+```
+
+### 3. Start the Development Server
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Or with yarn:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+yarn dev
+```
 
-**Use GitHub Codespaces**
+Or with bun:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+bun run dev
+```
 
-## What technologies are used for this project?
+The development server will start and you can view the portfolio at `http://localhost:5173` (or the port shown in your terminal).
 
-This project is built with:
+### 4. Build for Production
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+To create a production build:
 
-## How can I deploy this project?
+```bash
+npm run build
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+The optimized files will be in the `dist` directory.
 
-## Can I connect a custom domain to my Lovable project?
+### 5. Preview Production Build
 
-Yes, you can!
+To preview the production build locally:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```bash
+npm run preview
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Project Structure
+
+```
+src/
+├── components/      # Reusable React components
+│   ├── ui/         # shadcn-ui components
+│   ├── Hero.tsx    # Hero section
+│   ├── Projects.tsx # Projects showcase
+│   ├── Skills.tsx  # Skills section
+│   ├── Experience.tsx # Experience section
+│   └── Contact.tsx # Contact form
+├── pages/          # Page components
+├── hooks/          # Custom React hooks
+├── lib/            # Utility functions
+└── assets/         # Images and static assets
+```
+
+## Features
+
+- 🎨 Modern and responsive design
+- 📱 Mobile-first approach
+- ⚡ Fast performance with Vite
+- 🎯 Type-safe with TypeScript
+- 🎭 Beautiful UI components with shadcn-ui
+- 📧 Contact form functionality
+- 🚀 Optimized for production
+
+## License
+
+This project is open source and available for personal use.
+
+## Contact
+
+For inquiries or collaboration opportunities, please reach out through the contact form on the portfolio website.
