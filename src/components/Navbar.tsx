@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <a href="#" className="font-display text-xl font-bold">
             <span className="text-foreground">Hamza</span>
-            <span className="text-accent">Dar</span>
+            <span className="text-accent"> dar</span>
           </a>
 
           {/* Desktop Navigation */}

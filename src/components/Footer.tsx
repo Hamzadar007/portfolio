@@ -4,11 +4,11 @@ const Footer = () => {
       <div className="container-max flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="font-display font-bold text-lg">
           <span className="text-foreground">Hamza</span>
-          <span className="text-accent">Dar</span>
+          <span className="text-accent"> dar</span>
         </div>
         
         <p className="text-muted-foreground text-sm text-center">
-          © {new Date().getFullYear()} Hamza Dar. Built with React Native passion.
+          © {new Date().getFullYear()} Hamza dar. Built with React Native passion.
         </p>
         
         <div className="flex items-center gap-6">
