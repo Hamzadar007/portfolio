@@ -3,10 +3,10 @@ import heroIllustration from "@/assets/hero-illustration.png";
 
 const Hero = () => {
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: Mail, href: "mailto:hello@hamzadar.dev", label: "Email" },
+    { icon: Github, href: "https://github.com/Hamzadar007", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/hamza-dar-97a4851a1/", label: "LinkedIn" },
+    { icon: Twitter, href: "https://x.com/Hami_dar007", label: "Twitter" },
+    { icon: Mail, href: "mailto:hamzadar535@gmail.com", label: "Email" },
   ];
 
   return (
