@@ -46,7 +46,7 @@ const Projects = () => {
             My <span className="text-accent">Projects</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A selection of mobile applications I've built and shipped
+            A selection of mobile applications I've built and shipped.
           </p>
         </div>
 
