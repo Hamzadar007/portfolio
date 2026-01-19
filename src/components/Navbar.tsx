@@ -5,6 +5,15 @@ import { Button } from "./ui/button";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "/Hamza-dar-resume.pdf";
+    link.download = "Hamza-dar-resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const navItems = [
     { label: "About Me", href: "#about" },
     { label: "Skills", href: "#skills" },
@@ -32,7 +41,7 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:block">
-            <Button variant="outline" size="sm" className="gap-2 font-medium">
+            <Button variant="outline" size="sm" className="gap-2 font-medium" onClick={handleDownloadResume}>
               <Download className="w-4 h-4" />
               Resume
             </Button>
@@ -62,7 +71,7 @@ const Navbar = () => {
                   {item.label}
                 </a>
               ))}
-              <Button variant="outline" size="sm" className="gap-2 font-medium w-fit">
+              <Button variant="outline" size="sm" className="gap-2 font-medium w-fit" onClick={handleDownloadResume}>
                 <Download className="w-4 h-4" />
                 Resume
               </Button>

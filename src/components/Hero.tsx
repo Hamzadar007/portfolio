@@ -4,13 +4,20 @@ import heroIllustration from "@/assets/hero-illustration.png";
 const Hero = () => {
   const socialLinks = [
     { icon: Github, href: "https://github.com/Hamzadar007", label: "GitHub" },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/hamza-dar-97a4851a1/", label: "LinkedIn" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/hamza-dar-97a4851a1/",
+      label: "LinkedIn",
+    },
     { icon: Twitter, href: "https://x.com/Hami_dar007", label: "Twitter" },
     { icon: Mail, href: "mailto:hamzadar535@gmail.com", label: "Email" },
   ];
 
   return (
-    <section id="about" className="min-h-screen flex items-center section-padding pt-32">
+    <section
+      id="about"
+      className="min-h-screen flex items-center section-padding pt-32"
+    >
       <div className="container-max w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           {/* Content */}
@@ -26,9 +33,8 @@ const Hero = () => {
               </span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-lg mb-8 leading-relaxed">
-              I specialize in building high-performance, cross-platform mobile applications 
-              using React Native. Passionate about creating seamless user experiences that 
-              work beautifully on both iOS and Android.
+            React Native developer with 4+ years of experience building fast, scalable, and user-focused mobile apps for iOS and Android. I focus on clean architecture, performance, and great user experience. I enjoy solving complex problems, working with cross-functional teams, and turning ideas into reliable, production-ready products. Always learning, always improving.
+
             </p>
 
             {/* Social Links */}
@@ -52,9 +58,9 @@ const Hero = () => {
           <div className="order-1 lg:order-2 animate-fade-up-delayed">
             <div className="relative">
               <div className="absolute inset-0 bg-accent/10 rounded-full blur-3xl scale-75" />
-              <img 
-                src={heroIllustration} 
-                alt="Developer working on mobile apps" 
+              <img
+                src={heroIllustration}
+                alt="Developer working on mobile apps"
                 className="relative w-full max-w-lg mx-auto animate-float"
               />
             </div>
