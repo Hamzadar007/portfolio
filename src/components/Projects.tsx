@@ -1,40 +1,40 @@
-import { ExternalLink, Github, Smartphone } from "lucide-react";
+import { ExternalLink, Smartphone } from "lucide-react";
 import { Button } from "./ui/button";
-import PhoneMockup from "./PhoneMockup";
 
 const Projects = () => {
   const projects = [
     {
-      title: "FinTrack Pro",
+      title: "Cricwick",
+      image: "/cricwick.webp",
       description:
-        "A comprehensive personal finance app with real-time expense tracking, budget management, and investment portfolio insights.",
+        "Cricwick is a complete cricket platform offering fastest live scores, ball-by-ball updates, news, videos, and exclusive interviews. It also features a fantasy league where users create teams, compete in contests, and win exciting rewards.",
       tech: ["React Native", "TypeScript", "Redux", "Firebase"],
       color: "#3B82F6",
       platforms: ["iOS", "Android"],
+      playStoreLink: "https://play.google.com/store/apps/details?id=com.Khaleef.CricWick.TelenorZong&hl=en",
+      appStoreLink: "https://apps.apple.com/us/iphone/search?term=cricwick",
     },
     {
-      title: "FitFlow",
+      title: "ProfitDrive",
+      image: "/profitDrive.webp",
       description:
-        "Health and fitness app featuring workout tracking, meal planning, and progress analytics with native health kit integration.",
-      tech: ["React Native", "Expo", "GraphQL", "HealthKit"],
+        "ProfitDrive is a smart real estate investing app that helps users find, track, and manage off-market property leads while driving for deals. It automates research, route tracking, and lead management so investors can close more deals faster.",
+      tech: ["React Native", "Expo", "Maps", "Node.js","Zustand"],
       color: "#10B981",
       platforms: ["iOS", "Android"],
+      playStoreLink: "https://play.google.com/store/apps/details?id=io.profitdrive.mobile&hl=en",
+      appStoreLink: "https://apps.apple.com/us/app/profit-drive/id1490552063",
     },
     {
-      title: "ChatConnect",
+      title: "Edge by FrameBrand",
+      image: "/signal.webp",
       description:
-        "Real-time messaging app with end-to-end encryption, voice/video calls, and seamless file sharing capabilities.",
-      tech: ["React Native", "WebRTC", "Socket.io", "Node.js"],
+        "A robust security operations app with real-time officer monitoring, shift scheduling, panic alerts, management tools, and detailed reporting to streamline workforce operations.",
+      tech: ["React Native", "Google Maps", "Firebase", "Azure","Formik"],
       color: "#8B5CF6",
       platforms: ["iOS", "Android"],
-    },
-    {
-      title: "ShopEase",
-      description:
-        "E-commerce mobile app with intuitive shopping experience, AR product preview, and secure payment integration.",
-      tech: ["React Native", "Stripe", "ARKit", "REST API"],
-      color: "#F59E0B",
-      platforms: ["iOS", "Android"],
+      playStoreLink: "https://play.google.com/store/apps/details?id=com.signal.edge&hl=en",
+      appStoreLink: "https://apps.apple.com/us/app/edge-by-framebrand/id6470830060",
     },
   ];
 
@@ -53,7 +53,7 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="project-card">
-              {/* Phone Mockup */}
+              {/* Project Image */}
               <div className="bg-secondary/50 py-8 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10" 
                   style={{ 
@@ -61,7 +61,11 @@ const Projects = () => {
                   }} 
                 />
                 <div className="transform group-hover:scale-105 transition-transform duration-500">
-                  <PhoneMockup color={project.color} appName={project.title} />
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-auto object-contain max-h-96 mx-auto"
+                  />
                 </div>
               </div>
 
@@ -97,14 +101,35 @@ const Projects = () => {
                 </div>
 
                 {/* Links */}
-                <div className="flex gap-3">
-                  <Button variant="outline" size="sm" className="gap-2">
-                    <Github className="w-4 h-4" />
-                    Code
+                <div className="flex gap-3 flex-wrap">
+                  <Button 
+                    size="sm" 
+                    variant="outline"
+                    className="gap-2"
+                    asChild
+                  >
+                    <a 
+                      href={project.playStoreLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      Play Store
+                    </a>
                   </Button>
-                  <Button size="sm" className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90">
-                    <ExternalLink className="w-4 h-4" />
-                    Live App
+                  <Button 
+                    size="sm" 
+                    className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90"
+                    asChild
+                  >
+                    <a 
+                      href={project.appStoreLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      App Store
+                    </a>
                   </Button>
                 </div>
               </div>
