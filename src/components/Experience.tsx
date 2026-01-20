@@ -3,23 +3,23 @@ import { Building2 } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior React Native Developer",
-      company: "TechCorp Inc.",
-      period: "Jan 2023 - Present",
+      title: "Senior Software Engineer",
+      company: "Tkxel.",
+      period: "May 2023 - Present",
       description:
-        "Leading mobile development for flagship fintech app with 500K+ downloads. Architecting scalable solutions, mentoring junior developers, and driving best practices for cross-platform development.",
+        "Working as a Senior React Native Developer, contributing to multiple apps including ProfitDrive and Signal Edge. Led the development of ProfitDrive, building core features such as route tracking, property research, and lead management, while also contributing as a team member on Signal Edge by developing key modules like officer duty management, attendance tracking, and in-app chat. Focused on creating scalable React Native modules, optimizing performance, and delivering a seamless user experience across all products.",
     },
     {
-      title: "React Native Developer",
-      company: "MobileFirst Studios",
-      period: "Mar 2021 - Dec 2022",
+      title: "Software Engineer",
+      company: "Khaleef Technologies",
+      period: "Mar 2021 - April 2023",
       description:
-        "Built and maintained multiple React Native apps for healthcare and e-commerce clients. Implemented complex native modules, optimized app performance, and reduced crash rates by 60%.",
+        "Working as a React Native Developer in a product-based company, contributing to a large-scale sports application. Built and maintained React Native modules integrated into native Android and iOS apps. Developed major features including Fantasy Cricket (match creation, leaderboards, groups, and chat) while optimizing performance and improving app stability.",
     },
     {
-      title: "Mobile App Developer",
-      company: "StartupHub",
-      period: "Jun 2019 - Feb 2021",
+      title: "Mobile App Developer Intern",
+      company: "Technic Mentors",
+      period: "Aug 2020 - Jan 2021",
       description:
         "Developed cross-platform mobile applications from scratch. Collaborated with designers to implement pixel-perfect UIs and integrated RESTful APIs for real-time data synchronization.",
     },

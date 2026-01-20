@@ -24,8 +24,8 @@ const Contact = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <div className="flex items-center gap-2 text-muted-foreground">
               <Mail className="w-5 h-5 text-accent" />
-              <a href="mailto:hello@hamzadar.dev" className="hover:text-foreground transition-colors">
-                hello@hamzadar.dev
+              <a href="mailto:hamzadar535@gmail.com" className="hover:text-foreground transition-colors">
+                hamzadar535@gmail.com
               </a>
             </div>
             <div className="hidden sm:block w-1 h-1 rounded-full bg-muted-foreground" />
@@ -50,9 +50,15 @@ const Contact = () => {
             ))}
           </div>
 
-          <Button size="lg" className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90">
-            <Send className="w-5 h-5" />
-            Get In Touch
+          <Button 
+            size="lg" 
+            className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90"
+            asChild
+          >
+            <a href="mailto:hamzadar535@gmail.com">
+              <Send className="w-5 h-5" />
+              Get In Touch
+            </a>
           </Button>
         </div>
       </div>

@@ -26,7 +26,12 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container-max section-padding py-4">
         <div className="flex items-center justify-between">
-          <a href="#" className="font-display text-xl font-bold">
+          <a href="#" className="font-display text-xl font-bold flex items-center gap-2">
+            <img 
+              src="/logo.png" 
+              alt="Hamza dar" 
+              className="w-8 h-8 object-contain"
+            />
             <span className="text-foreground">Hamza</span>
             <span className="text-accent"> dar</span>
           </a>
